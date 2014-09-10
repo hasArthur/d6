@@ -368,6 +368,9 @@
         body.scrollTop = 0;
       });
       forEach(scripts, execute);
+      //+env:prod,canary
+      onReady(document);
+      //-env:prod,canary
     }
   };
 
